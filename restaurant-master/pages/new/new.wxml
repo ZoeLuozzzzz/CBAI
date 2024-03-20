@@ -1,0 +1,15 @@
+<!--pages/new/new.wxml-->
+<view class="pages">
+  <view class="header">
+    <view class="logo"></view>
+    <view class="name">草本"AI"茶语</view>
+    <view class="line"></view>
+    <view class="desc">点外卖请打电话</view>
+  </view>
+
+  <view class="buttons">
+    <button bindtap="gotofirst" class="yellow">堂食</button>
+<!--    <button bindtap="gotosecond" class="white">外送</button>-->
+    <button bindtap="gotothird" class="white">中医健康测试</button>
+  </view>
+</view>

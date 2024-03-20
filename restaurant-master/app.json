@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/new/new",
+    "pages/home/home",
+    "pages/order/order",
+    "pages/homec/homec",
+    "pages/success/success",
+    "pages/home/order",
+    "pages/high_score/high_score",
+    "pages/second_high_score/second_high_score",
+    "pages/third_high_score/third_high_score",
+    "pages/low_score/low_score",
+    "pages/question/question"
+
+  ],
+  "window": {
+    "backgroundColor": "#f4f4f4",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "餐厅",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "lazyCodeLoading": "requiredComponents"
+}

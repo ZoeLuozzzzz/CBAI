@@ -1,0 +1,5 @@
+<view class="page">
+  <image src="/res/img/店面照.jpg" class="background-image"></image>
+  <button bindtap="gotoNew" class="goto-new-button">传送到 New 页面</button>
+</view>
+

@@ -1,0 +1,56 @@
+<import src="../home/home.wxml"/>
+<view>
+  <view class="table">
+    <view class="table-num">桌号:
+      <text class="tabnum">{{tables[tableIndex]}}</text>
+    </view>
+
+    <!--<picker bindchange="bindPickerChange" value="{{tableIndex}}" range="{{tables}}">
+      <view class="table-input">{{tables[tableIndex]}}</view>
+      <span class="table-arrow">﹀</span>
+    </picker>-->
+
+  </view>
+
+  <view class="beizhu">
+    <view class="beizhu-txt">备注</view>
+    <textarea class="beizhu-input"  placeholder=""/>
+  </view>
+
+  <view class="order">
+    <view class="cost">总价：<span>￥{{total}}</span></view>
+    <!-- 你先找到你要加的位置，比如说总价下面  -->
+    <!-- 这个view是小程序独有的标签，你就当div用 -->
+     <!-- div是什么意思呀就是标签的意思，就好比一个人上班，他得穿衣服这个div就是这个人的最外层的衣服，需要衣服包裹着 -->
+     <!-- 然后你要写单选框 -->
+     <!-- 你就去官方文档里面嗖 单选框 -->
+    <view>
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label">
+          <view class="weui-cell__hd">
+            <radio value="外送" checked="true"></radio>
+            <radio value="堂食" />
+          </view>
+        </label>
+      </radio-group>
+      <!-- 先选中pages 先创建一个文件夹。然后选中这个new，新建page就可以了
+ 然后再使用 我前面说的页面跳转，然后跳转到新页面-->
+    </view>
+    <view class="list">
+			<view class="item" wx:for="{{orderList}}"  wx:key="orderList">
+				<view class="name ellipsis">{{orderList.name}}</view>
+				<view class="reduce" data-id="{{id}}" bindtap="tapReduceCart">-</view>
+				<view class="num">1</view>
+				<view class="add" data-id="{{id}}" bindtap="tapAddCart">+</view>
+			</view>
+		</view>
+  </view>
+
+  <view class="bt-area">
+    <view class="bt-return" bindtap="returnClick">继续点餐</view>
+<!--    <view class="bt-ok" bindtap="okClick">确定下单</view>-->
+  </view>
+
+  <toast hidden="{{toastHidden}}">{{toastTxt}}</toast>
+
+</view>

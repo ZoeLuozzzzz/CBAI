@@ -1,0 +1,4 @@
+<view class="container">
+  <view class="result">You are in the third highest score range.</view>
+  <button class="button" bindtap="redirectToNewPage">Return to New Page</button>
+</view>

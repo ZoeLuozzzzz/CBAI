@@ -1,0 +1,17 @@
+<view class="container">
+  <view wx:if="{{currentQuestion < questions.length}}">
+    <view class="question">{{questions[currentQuestion]}}</view>
+    <view class="options">
+      <view wx:for="{{options}}" wx:key="index" class="option" bindtap="selectOption" data-option="{{item}}">{{item}}</view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="result">
+      <view wx:if="{{totalScore >= 18 && totalScore <= 20}}">Congratulations! You are in the highest score range.</view>
+      <view wx:elif="{{totalScore >= 14 && totalScore <= 17}}">You are in the second highest score range.</view>
+      <view wx:elif="{{totalScore >= 9 && totalScore <= 13}}">You are in the third highest score range.</view>
+      <view wx:else>You are in the lowest score range.</view>
+      Your total score is: {{totalScore}}
+    </view>
+  </view>
+</view>

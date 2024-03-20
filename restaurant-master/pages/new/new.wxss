@@ -1,0 +1,46 @@
+/* pages/new/new.wxss */
+.page {
+  height: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0; /* 设置背景颜色为浅灰色 */
+}
+
+.header {
+  position: relative;
+  background-color: #8edd7f;
+  border: 1px solid #419b31;
+  background-image: -o-linear-gradient(bottom, #8edd7f 0%, #419b31 100%);
+  background-image: -moz-linear-gradient(bottom, #8edd7f 0%, #419b31 100%);
+  background-image: -webkit-linear-gradient(bottom, #8edd7f 0%, #419b31 100%);
+  background-image: -ms-linear-gradient(bottom, #8edd7f 0%, #419b31 100%);
+  background-image: linear-gradient(to bottom, #8edd7f 0%, #419b31 100%);
+  -webkit-box-shadow: inset 0 1px 0 #8a7251;
+  -moz-box-shadow: inset 0 1px 0 #8a7251;
+  box-shadow: inset 0 1px 0 #8a7251;
+  text-shadow: 0 1px 0 #8a7251;
+  padding: 20rpx 40rpx;
+}
+
+
+.header .name {
+  padding-top: 20rpx;
+  font-size: 36rpx;
+  line-height: 60rpx;
+  color: #06130c; /* 设置标题文字颜色为深绿色 */
+}
+
+.header .line {
+  clear: both;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #000;
+  padding-top: 20rpx;
+}
+
+.header .desc {
+  color: #333;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  padding-top: 20rpx;
+  color: #fff; /* 设置副标题文字颜色为白色 */
+}

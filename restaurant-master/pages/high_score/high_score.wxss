@@ -1,0 +1,25 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* 让按钮位于页面底部 */
+  align-items: center;
+  height: 100vh; /* 设置页面高度为屏幕高度 */
+}
+
+.background-image {
+  position: absolute; /* 将图片设为绝对定位，覆盖整个页面 */
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* 将图片的 z-index 设为负数，确保按钮位于图片之上 */
+}
+
+.goto-new-button {
+  margin-bottom: 20px; /* 按钮与页面底部的距离 */
+  font-size: 16px;
+  background-color: #007bff; /* 设置按钮背景颜色 */
+  color: #fff; /* 设置按钮文字颜色 */
+  padding: 10px 20px; /* 设置按钮内边距 */
+  border-radius: 5px; /* 设置按钮圆角 */
+}
+
+
